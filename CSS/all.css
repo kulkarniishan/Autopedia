@@ -220,13 +220,12 @@ header a:hover{
   position: relative;
   transition: transform 0.75s, border-radius 0.75s;
   margin-right: 2px;
-  z-index: 99999;
 }
 
 
 .catalogues div img:hover{
   transform: scale(1.2);
-  z-index: 99999;
+  z-index: 9;
   background: white;
   border-radius: 10%;
 }
