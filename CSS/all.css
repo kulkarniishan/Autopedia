@@ -1,6 +1,5 @@
 body{
-  width: 90%;
-  padding: 0% 4%;
+  width: 98%;
 }
 
 
@@ -19,7 +18,7 @@ header a{
   text-decoration: none;
   display:inline-block;
   margin: 0% 1%;
-  font-size: 120%;
+  font-size: 170%;
   color:  white;
   border: white solid;
   padding: 1vh;
@@ -231,9 +230,15 @@ header a:hover{
   background: white;
   border-radius: 10%;
 }
-
+.browsecat{
+  margin-top: 5%;
+}
 #browse{
   text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-variant:small-caps;
+  font-size: 200%;
 }
 
 section.History{
@@ -252,7 +257,7 @@ section.History{
 
 .History h3{
   text-align: Center;
-  font-size: 300%;
+  font-size: 270%;
   font-family: monospace;
   letter-spacing: 10px;
 }
