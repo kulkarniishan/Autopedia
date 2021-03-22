@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='CSS\order.css'>
+    <title> Order form</title>
+  </head>
+  <body>
+    <details open>
+      <summary>
+        Open order form
+    </summary>
+    <form autocomplete="on" method="post">
+      <h1> Order a T-shirt</h1>
+      <div class="first">
+      <label for="tshirt">Product <br/>
+        <select type="text" class="data" datalist id="tshirt"required>
+
+      <option value="Black Tee With Porsche Yellow">Black Tee With Porsche Yellow</option>
+      <option value="BMW Logo print Red Tee">BMW Logo print Red Tee</option>
+      <option value="'Volswagen das auto' print blue Tee">'Volswagen das auto' print blue Tee</option>
+      <option value="Red Tesla-X print Gray Tee">Red Tesla-X print Gray Tee</option>
+      </select>
+    </label>
+    </div>
+
+    <div class="second">
+    <label for="size">Size <br/>
+    <select id="size" class="data" name="size" required>
+    <option value="XXXL">XXXL</option>
+    <option value="XXL">XXL</option>
+    <option value="XL">XL</option>
+    <option value="L">L</option>
+    <option value="M">M</option>
+    <option value="S">S</option>
+    </select>
+  </label>
+  </div>
+  <br/>
+  <label for="shape">
+    <div id="Shape">
+      Shape
+      <br/>
+      <div class="inside-shape">
+    <label for="U">
+      U-Shaped
+      <input type="radio" name="neck-type" id ="U" value="U-Shaped" required></label>
+    <label for="V">
+      V-Shaped
+      <input type="radio" name="neck-type"id="V" value="V-Shaped" required></label>
+    </div>
+  </div>
+    </label>
+    <br/>
+      <div class="left">
+      <label for="name">
+      <input type="text" name="name" id="name" placeholder="your name" required>
+      </label>
+      <br/>
+      <input type="email" id="email" name="email" placeholder="your email" required>
+      <br/>
+      <input type="tel" name ='phone' maxlength='13' pattern='^((\+){1}91){1}[1-9]{1}[0-9]{9}$' placeholder='your number'equired>
+      <textarea name="textarea" id="address"rows="8" cols="80" placeholder="your address"required></textarea>
+    </div>
+        <div class="right">
+          <h2> payment Method </h2>
+          <input type="radio" name="payment" id="Visa"value ="Visa" required/>
+          <label for="Visa">
+          <img src="Images/payment/visa.png" alt="visa"/>
+        </label>
+
+          <input type="radio" name="payment" id="Mastercard" value ="Mastercard" required/>
+          <label for="Mastercard"/>
+          <img src="Images/payment/mastercard.png" alt="mastercard"/>
+        </label>
+        <br/>
+          <input type="radio" name="payment" id="Paypal" value="Paypal" required/>
+          <label for="Paypal">
+          <img src="Images/payment/paypal.png" alt="paypal"/>
+          </label>
+
+          <input type="radio" name="payment" id= "American-Express" value= "American-Express" required/>
+          <label for="American-Express">
+          <img src="Images\payment\american-express.png" alt="american-express"/>
+          </label>
+        </div>
+      <br/>
+      <div class="clear">
+      <input type="submit" id ="submit" value="order">
+      <input type="reset" id ="reset" value="reset">
+    </div>
+      </form>
+    </details>
+  </body>
+</html>

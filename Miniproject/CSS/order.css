@@ -1,0 +1,112 @@
+form{
+  border: black solid;
+  position: absolute;
+  width: 30%;
+  padding: 2%;
+  margin: 0% 30%;
+  background: #3498DB ;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+
+input, select, option{
+  margin-top: 2%;
+  background: #212F3C;
+  width: 95%;
+  color: white;
+  font-size: 120%;
+}
+#address{
+  width: 95%;
+  font-size: 120%;
+  margin-top: 2%;
+  color: white;
+  background: #212F3C;
+  resize:none;
+}
+
+#submit{
+  background: #58D68D;
+  width: 30%;
+  border: transparent;
+  font-variant: small-caps;
+  margin: 0% 9.5%;
+  padding: 1%;
+  font-size: 150%;
+  border-radius: 7.5px;
+  border: #239B56 solid;
+}
+#reset{
+  background: #E74C3C ;
+  width: 30%;
+  border: transparent;
+  font-variant: small-caps;
+  margin: 0% 9.5%;
+  padding: 1%;
+  font-size: 150%;
+  border-radius: 7.5px;
+  border: #922B21 solid;
+}
+#U, #V{
+  width: 30%;
+  clear:both;
+}
+.first{
+  display: inline-block;
+  width:48%;
+}
+.second{
+  display: inline-block;
+  width:48%;
+}
+.data{
+  width: 96%;
+}
+
+#Visa, #Mastercard, #American-Express, #Paypal{
+  width: 0%;
+}
+
+
+
+input[type=radio]:checked + label>img {
+  background: #212F3C;
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+
+input[type=radio] + label>img {
+  width: 40%;
+  transition: transform 0.01s all;
+}
+
+.left{
+  display: block;
+  width: 50%;
+  float: left;
+}
+.right{
+  margin-left:55%;
+  background: white;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.right h2{
+  background: #212F3C;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+}
+
+.clear{
+  clear:both;
+}
+.inside-shape{
+  color:white;
+  width: 96%;
+}
+.inside-shape label{
+  background: #212F3C;
+}
