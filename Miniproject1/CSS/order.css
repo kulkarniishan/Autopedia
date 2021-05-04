@@ -50,6 +50,7 @@
   color: white;
   background: #212F3C;
   resize:none;
+  height: 20vh;
 }
 
 .orderForm #submit{
