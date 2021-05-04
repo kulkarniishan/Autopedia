@@ -1,0 +1,183 @@
+header{
+  background: black;
+}
+
+.outer-container{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 0% 2%;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card{
+  text-align: center;
+  box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 1rem 2%;
+  border: rgba(0,0,0,0.5) solid;
+  transition: 0.4s transform, 0.4s box-shadow;
+}
+
+.card:hover{
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+}
+
+.card-content{
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.card-content p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
+}
+.card a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.featured_container{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-bottom: 1em;
+  margin-left: 2%;
+  margin-right:2%;
+}
+@media screen and (min-width:640px){
+  .featured_container{
+  grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (min-width:1008px){
+  .featured_container{
+  grid-template-columns: repeat(4,1fr);
+  }
+  .outer-container{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.featured_card{
+  box-shadow: 0 7px 10px rgba(0,0,0,0.5) ;
+  overflow: hidden;
+  margin: 1rem 2%;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.featured_card:hover img{
+  opacity: 0;
+}
+
+.featured_card:hover{
+  transform: translateY(20px);
+  background-image: linear-gradient(to bottom,rgba(11, 27, 54, 1),rgba(39, 71, 125,1),rgba(191, 215, 255,1));
+}
+
+.featured_card img{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s display;
+}
+
+.featured_content p {
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s opacity, 0.8s transform;
+}
+.featured_card:hover p {
+  transform: translateY(-20vh) scale(1.5);
+  opacity: 1;
+}
+.featured_card p input{
+  background: black;
+  color: white;
+  padding: 5px;
+  border: white solid;
+  transition: 0.2s background-color,0.2s color;
+}
+.featured_card p input:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.featured_content p:first-child{
+  opacity: 1;
+}
+
+.popup{
+  background:rgba(135, 135, 135, 0.5);
+  position:fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  transition: opacity 5s;
+}
+
+.popup-content{
+  transform:translate(115%,10vh);
+}
+
+@media screen and (max-width:1008px){
+  .popup-content{
+    transform:translate(50%,10vh);
+  }
+}
+
+@media screen and (max-width:800px){
+  .popup-content{
+    transform:translate(15%,10vh);
+  }
+}
+
+#myCarousel img{
+  opacity: 0.8;
+}
+.carousel-item{
+  background: black;
+}
+
+@media screen and (max-width: 1109px){
+#myCarousel{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin-top: 7vh;
+  width: 100%;
+}
+.outer-container{
+  padding-top: 65vh;
+}
+}
+
+@media screen and (max-width: 730px){
+  #myCarousel{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-top: 6vh;
+    width: 100%;
+  }
+  .outer-container{
+    padding-top: 45vh;
+  }
+  }

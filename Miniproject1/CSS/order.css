@@ -1,0 +1,150 @@
+.orderForm{
+  border: black solid;
+  position: relative;
+  width: 100%;
+  background: #3498DB ;
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+.popup-content{
+  width: 30%;
+  box-shadow: 0 3rem 6rem rgba(0,0,0,0.2);
+}
+@media screen and (max-width:1008px){
+  .popup-content{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:800px){
+  .popup-content{
+    width: 70%;
+  }
+}
+
+#close{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#close:hover {
+  opacity: 0.8;
+}
+
+
+.orderForm input,.orderForm select,.orderForm option{
+  margin-top: 2%;
+  background: #212F3C;
+  width: 95%;
+  color: white;
+  font-size: 120%;
+}
+.orderForm #address{
+  width: 95%;
+  font-size: 120%;
+  margin-top: 2%;
+  color: white;
+  background: #212F3C;
+  resize:none;
+}
+
+.orderForm #submit{
+  background: #58D68D;
+  width: 30%;
+  border: transparent;
+  font-variant: small-caps;
+  margin: 0% 9.5%;
+  padding: 1%;
+  font-size: 150%;
+  border-radius: 7.5px;
+  border: #239B56 solid;
+}
+.orderForm #reset{
+  background: #E74C3C ;
+  width: 30%;
+  border: transparent;
+  font-variant: small-caps;
+  margin: 0% 9.5%;
+  padding: 1%;
+  font-size: 150%;
+  border-radius: 7.5px;
+  border: #922B21 solid;
+}
+ #U, #V{
+  width: 10px;
+}
+.inside-shape{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+}
+.first{
+  display: inline;
+
+}
+ .second{
+  display: inline;
+
+}
+.orderForm .data{
+  width: 96%;
+}
+
+.orderForm #Visa,.orderForm #Mastercard,.orderForm #American-Express,.orderForm #Paypal{
+  width: 0%;
+}
+
+
+
+.orderForm input[type=radio]:checked + label>img {
+  background: #212F3C;
+  border-radius: 20px;
+  transform: scale(1.2);
+}
+
+.pcontainer img {
+  width: 80%;
+  transition: transform 0.01s all;
+}
+
+.orderForm .left{
+  display: block;
+  width: 50%;
+  float: left;
+}
+.orderForm .right{
+  margin-left:55%;
+  background: white;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.pcontainer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  j
+  ustify-content: center;
+}
+.orderForm .right h2{
+  background: #212F3C;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+}
+
+.orderForm .clear{
+  clear:both;
+}
+.orderForm .inside-shape{
+  color:white;
+  width: 96%;
+}
+.orderForm .inside-shape label{
+  background: #212F3C;
+}
