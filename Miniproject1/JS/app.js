@@ -32,9 +32,17 @@ function validate(){
 }
 if(!(/^[a-zA-Z]+ [a-zA-Z]+$/).test(document.getElementById('name').value.trim())) {
   alert("Please enter your first name and the last name with a white space!");
+  document.getElementById('name').focus();
   return false;
 }
-true;
+
+if(!(/((\+){1}91){1}[1-9]{1}[0-9]{9}$/).test(document.getElementById('phone').value.trim())){
+    alert("Invalid phone format");
+    document.getElementById('phone').focus();
+    return false;
+  }
+  alert("Form Submitted");
+  return true;
 }
 
 function checkEmail(){
