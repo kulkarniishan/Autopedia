@@ -1,0 +1,25 @@
+
+.loader{
+  position:fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 99999;
+  background: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden{
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+
+}

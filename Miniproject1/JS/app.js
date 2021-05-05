@@ -11,17 +11,26 @@ const navSlide = () => {
 
 navSlide();
 
-
+try{
 [document.getElementById('buyNow1'), document.getElementById('buyNow2'), document.getElementById('buyNow3')].forEach(item => {
   item.addEventListener('click', event => {
     document.querySelector('.popup').style.display= 'block';
     document.querySelector('.popup').style.opacity= '1';
   })
 })
+}
+catch{
 
+}
+
+try{
 document.getElementById('close').addEventListener('click',function(){
   document.querySelector('.popup').style.display= 'none';
 })
+}
+catch{
+
+}
 
 
 function validate(){
@@ -58,3 +67,12 @@ function checkEmail(){
   alert("You have subscribed successfully");
   return true;
 }
+
+window.addEventListener('load', event=>{
+  setTimeout(function(){
+    document.querySelector('.hidden').style.animation=' fadeOut 1s';
+    setTimeout(function(){
+        document.querySelector('.loader').style.display=' none';;
+    }, 500);
+  }, 500);
+})

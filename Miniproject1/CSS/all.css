@@ -494,6 +494,10 @@ footer{
   .footer{
     grid-template-columns: repeat(1, 1fr);
   }
+  .loader img{
+    width: 20%;
+    height: 20%:
+  }
   #navigate{
     display: none;
   }
