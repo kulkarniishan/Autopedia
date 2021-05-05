@@ -158,26 +158,18 @@ header{
 
 @media screen and (max-width: 1109px){
 #myCarousel{
-  position: absolute;
-  top: 0%;
-  left: 0%;
+  width: 100%;
   margin-top: 7vh;
   width: 100%;
 }
-.outer-container{
-  padding-top: 65vh;
-}
+
 }
 
 @media screen and (max-width: 730px){
   #myCarousel{
-    position: absolute;
-    top: 0%;
-    left: 0%;
+
     margin-top: 6vh;
     width: 100%;
   }
-  .outer-container{
-    padding-top: 45vh;
-  }
+
   }
