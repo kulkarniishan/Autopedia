@@ -155,21 +155,3 @@ header{
 .carousel-item{
   background: black;
 }
-
-@media screen and (max-width: 1109px){
-#myCarousel{
-  width: 100%;
-  margin-top: 7vh;
-  width: 100%;
-}
-
-}
-
-@media screen and (max-width: 730px){
-  #myCarousel{
-
-    margin-top: 6vh;
-    width: 100%;
-  }
-
-  }
